@@ -1,0 +1,115 @@
+/* Patrones de colores */
+$texto:#111111;
+$color_principal:#1E90FF;
+$color_gris:#DCDCDC;
+$color_blanco:#FFFFFF;
+
+/* Cargar Fuente  */
+
+html{
+    font-size: 15px;
+}
+body{
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: $texto;
+}
+.bienvenidos{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.encabezado{
+    background: $texto;
+    color: $color_blanco;
+    padding: .5rem 0;
+}
+.encabezado .container{
+    display: flex;
+    align-items: center;
+   
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+.container img  {
+    width: 140px;
+    height: auto;
+    margin-right: 45px;
+    
+}
+.boton-menu {
+    
+    outline: 0;
+    background: black;
+    border: 0;
+    
+}
+.boton-menu  .fa-align-justify{
+    border: 0;
+    font-size: 1.4rem;
+    margin: 0;
+    padding: 0 .2rem;
+    color: $color_principal;
+}
+#menu-principal{
+        flex: 1 1 100%;
+}
+#menu-principal ul{
+    padding: 0;
+    flex: 1 1 100%;
+    list-style: none;
+    margin: 1rem 0 0 0;
+}
+#menu-principal ul a{
+    display: block;
+    padding: .5rem 0;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    border-top: 1px solid $color_gris;
+    text-decoration: none;
+}
+#menu-principal ul a:hover,
+#menu-principal ul li.active a{
+    color:$color_principal;
+}
+
+.texto-encabezado{
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    
+}
+
+.texto-encabezado .btn-primary {
+    margin-top: 1rem;
+}
+.texto-encabezado .display-4 {
+    margin-top: 5rem;
+}
+.btn-primary {
+    color: $color_blanco;
+    margin-top: 1rem;
+    border-color: transparent;
+    transition: all .7s ease;
+}
+.flecha-baja a{
+    display: inline-block;
+    font-size: 4rem;
+    animation: flecha-animada 1s ease-in-out infinite;
+}
+/* Flecha animada */
+@keyframes flecha-animada{
+    from{
+        transform: translateY(0);
+    }
+50%{
+    transform: translateY(6px);
+}
+to{
+    transform: translateY(0);
+}
+}
+.divisor {
+   padding-bottom: 10px;
+    border-bottom: 1px solid #3f87a6;
+}
