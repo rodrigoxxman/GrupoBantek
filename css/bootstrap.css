@@ -4978,7 +4978,7 @@ button.bg-dark:focus {
   display: -ms-inline-flexbox !important;
   display: inline-flex !important; }
 
-@media (min-width: 576px) {
+@media (min-width:  576px) {
   .d-sm-none {
     display: none !important; }
 

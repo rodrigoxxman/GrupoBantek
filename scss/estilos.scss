@@ -113,3 +113,10 @@ to{
    padding-bottom: 10px;
     border-bottom: 1px solid #3f87a6;
 }
+
+@media (min-width: 576px) {
+   .d-none {
+  display: none !important; }
+
+}
+
