@@ -19,10 +19,17 @@ body{
     flex-direction: column;
 }
 .encabezado{
-    background: $texto;
+    background: #8b8e92;
     color: $color_blanco;
     padding: .5rem 0;
+    transition: all .5s ease;
 }
+
+.encabezado.fondo-menu{
+   background: #0666b3;
+    padding:  .7rem 0;
+}
+
 .encabezado .container{
     display: flex;
     align-items: center;
@@ -33,7 +40,7 @@ body{
 .container img  {
     width: 140px;
     height: auto;
-    margin-right: 45px;
+    
     
 }
 .boton-menu {
@@ -97,6 +104,8 @@ body{
     font-size: 4rem;
     animation: flecha-animada 1s ease-in-out infinite;
 }
+
+
 /* Flecha animada */
 @keyframes flecha-animada{
     from{
@@ -114,9 +123,171 @@ to{
     border-bottom: 1px solid #3f87a6;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 575px) {
+     
    .d-none {
-  display: none !important; }
+       display: none !important; }
+   
+     .quienes-somos .titulo_azul {
+     color: #054079;
+    font-weight: 400;
+    font-size: 1.5rem;
+        ;}
+    .soluciones-seguridad .seguridad{
+      text-align: right;
+      
+    }
+    .texto-encabezado h1{
+        font-size: 2.5rem;
+    }
+     .texto-encabezado a{
+        font-size: .8rem;
+    }
+    .flecha-baja a{
+        font-size: 3rem;
+    }
+    
+   .texto_quienes_somos p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+    .titulo {
+    position: relative;
+    top: 45%;
+    font-size: 1.5rem;
+    font-weight: 600;
+        
+}
+    
+    .titulo_azul{
+        color: #054079;
+}
+} 
+@media (max-width: 576px ) {
+   html{
+        font-size: 12px;
+    }
+   .soluciones-centrado{
+      text-align: center;
+      
+    }
+    .soluciones-seguridad .seguridad{
+      text-align: center;
+      
+    }
+    .texto-encabezado h1 {
+    font-size: 1.8rem;
+}
+   
+    .quienes-somos .titulo_azul {
+        color: #054079;
+    font-weight: 700;
+    font-size:  2rem;
+        ;}
+   
+     .titulo_azul ul {
+    color: #054079;
+    font-weight: 700;
+    font-size: xx-large;
+         font-size: 1.4rem;
+}
+    .titulo_azul{
+        color: #054079;
+}
+    
+     
+    
+} 
 
+@media (min-width: 768px ) {
+#menu-principal{
+    
+    height: auto !important;
+    display: block;
+        flex: 0 1 auto;
+   
+    margin-left: auto;
+        order: 1;
+}
+    #menu-principal ul{
+     display: flex;
+            margin: 0 0 0 0;
+}
+      #menu-principal ul li a{
+    padding: .8rem;
+          text-transform: capitalize;
+          margin: 0 .2rem;
+          border-top: 0px;
+          border-bottom: 4px solid transparent;
+          transition: all .5s ease;
+}
+         #menu-principal ul li.active a,
+        #menu-principal ul li a:hover{
+           color: $color_principal;
+             border-bottom: 4px solid;
+}
+}
+ 
+
+.titulo{
+    position: relative;
+    top: 45%;
+}
+
+.piedepagina {
+    background: #001e3c;
+    color: #fff;
+    text-align: center;
+    font-size: .9rem;
+}
+
+.piedepagina .redes-sociales {
+   
+    display: flex;
+   
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.piedepagina .redes-sociales a {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 .5rem;
+    opacity: .7;
+        transition: all .5s ease;
+}
+
+.ir-arriba {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    color: $color_principal;
+    text-decoration: none;
+    z-index: 99999;
+    line-height: 0;
+    display: none;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+
+
+.texto_quienes_somos{
+        font-size: larger;
+    font-weight: 500;
+}
+
+.aliados-img img {
+        width: 30px;
+    height: auto;
+    margin-right: 40px;
+}
+
+ 
+html ul {
+    list-style: none;
 }
 
